@@ -9,6 +9,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { AdComponent } from './ad/ad.component';
 import { EditComponent } from './edit/edit.component';
 import { HeaderComponent } from './header/header.component';
+import { PgnotfoundComponent } from './pgnotfound/pgnotfound.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeaderComponent } from './header/header.component';
     EmployeeComponent,
     AdComponent,
     EditComponent,
-    HeaderComponent
+    HeaderComponent,
+    PgnotfoundComponent
   ],
   imports: [
     BrowserModule,
