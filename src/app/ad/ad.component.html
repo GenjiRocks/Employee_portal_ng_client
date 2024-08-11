@@ -1,1 +1,53 @@
-<p>ad works!</p>
+<app-header></app-header>
+<div class="row mx-0 w-100 d-flex">
+  <div
+    class="col-md-2 sidebar bg-dark d-flex flex-column align-items-center"
+    style="min-height: 88vh"
+  >
+    <a routerLink="/dashboard" style="text-decoration: none">
+      <h5 class="mb-0 text-light mt-3 mb-3">
+        <i class="fa-solid fa-house-user me-2"></i>Dashboard
+      </h5>
+    </a>
+    <a routerLink="/employee" style="text-decoration: none">
+      <h5 class="mb-0 text-light">
+        <i class="fa-solid fa-user-group me-2"></i>Employees
+      </h5>
+    </a>
+  </div>
+  <div class="col-md-10 p-0">
+    <div class="row mx-0 w-100 p-3">
+      <div class="row text-center mx-0">
+        <h2 class="text-primary mt-5">Add New Employee Details</h2>
+      </div>
+      <div class="row mx-0 w-100">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <form class="shadow p-4 mt-4">
+            <div class="mb-3 mt-3">
+              <input type="text" placeholder="User ID" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <input type="text" placeholder="Username" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <input type="text" placeholder="Email" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <select class="form-select" aria-label="Default select example">
+                <option selected disabled>Status</option>
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <div class="btn btn-warning me-3">Cancel</div>
+              <div class="btn btn-success">Add</div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </div>
+</div>

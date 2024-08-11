@@ -1,1 +1,104 @@
-<p>dashboard works!</p>
+<app-header></app-header>
+<div class="row mx-0 w-100 d-flex">
+  <div
+    class="col-md-2 sidebar bg-dark d-flex flex-column align-items-center"
+    style="min-height: 88vh"
+  >
+    <a routerLink="/dashboard" style="text-decoration: none">
+      <h5 class="mb-0 text-light mt-3 mb-3">
+        <i class="fa-solid fa-house-user me-2"></i>Dashboard
+      </h5>
+    </a>
+    <a routerLink="/employee" style="text-decoration: none">
+      <h5 class="mb-0 text-light">
+        <i class="fa-solid fa-user-group me-2"></i>Employees
+      </h5>
+    </a>
+  </div>
+  <div class="col-md-10 p-0">
+    <div class="row mx-0 w-100 p-3">
+      <div class="col-md-8 d-flex flex-column p-0">
+        <div
+          class="row mx-0 w-100 bg-info d-flex justify-content-center align-items-center"
+          style="min-height: 120px"
+        >
+          <h4 class="text-light mb-0">
+            <i class="fa-solid fa-bars me-2"></i> Welcome Admin
+          </h4>
+        </div>
+        <div class="row mx-0">
+          <div class="col-md-6 calender p-3">
+            <h6>Calender</h6>
+          </div>
+          <div class="col-md-6 piechart p-3">
+            <h6>Chart</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex flex-column pe-0 ps-3">
+        <div
+          class="row mx-0 w-100 d-flex flex-column justify-content-center align-items-center shadow"
+          style="background-color: #c1e7f5; min-height: 300px"
+        >
+          <!-- <img
+            src="https://cdn-icons-png.freepik.com/256/6024/6024190.png"
+            alt="admin-image"
+            class="rounded-circle"
+            style="
+              width: 130px;
+              height: 120px;
+              filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+            "
+          />
+          <button
+            style="text-decoration: none; max-width: fit-content"
+            class="mt-2 btn"
+          >
+            Edit Admin Details <i class="fa-solid fa-pen-to-square"></i>
+          </button> -->
+          <div
+            class="d-flex flex-column justify-content-center align-items-center pt-3"
+          >
+            <h6 class="mb-3">Update Admin Details</h6>
+            <img
+              src="https://cdn-icons-png.freepik.com/256/6024/6024190.png"
+              alt="admin-image"
+              class="rounded-circle mb-3"
+              style="
+                width: 100px;
+                height: 105px;
+                filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+              "
+            />
+            <div class="mb-3 w-100 px-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Admin Name"
+              />
+            </div>
+            <div class="mb-3 w-100 px-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Admin Password"
+              />
+            </div>
+            <div class="mb-3 d-flex w-100 px-3 justify-content-between">
+              <div class="btn btn-warning">Cancel</div>
+              <div class="btn btn-success">Update</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row mx-0 w-100 d-flex justify-content-center align-items-center shadow mt-3"
+          style="background-color: #a772f2; min-height: 300px"
+        >
+          <h4 class="text-light fw-bold" style="max-width: fit-content">
+            <i class="fa-solid fa-user-group me-2"></i> Employee Count: 6
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
