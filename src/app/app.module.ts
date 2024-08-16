@@ -19,6 +19,11 @@ import { MatNativeDateModule } from '@angular/material/core';
 
 // for highcharts
 import { HighchartsChartModule } from 'highcharts-angular';
+import { FormsModule } from '@angular/forms';
+
+// httpclient for api service
+import { HttpClientModule } from '@angular/common/http';
+import { SearchPipe } from './pipes/search.pipe';
 
 @NgModule({
   declarations: [
@@ -29,7 +34,8 @@ import { HighchartsChartModule } from 'highcharts-angular';
     AdComponent,
     EditComponent,
     HeaderComponent,
-    PgnotfoundComponent
+    PgnotfoundComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
@@ -38,7 +44,9 @@ import { HighchartsChartModule } from 'highcharts-angular';
     MatCardModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
